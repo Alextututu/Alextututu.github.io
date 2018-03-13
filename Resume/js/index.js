@@ -6,8 +6,9 @@ $(function(){
 		$("body").width(width+"px");
 		$("body").height(height+"px");
 		$("#box").width(width+"px").height(height*5+"px");
-		$("#box li").height(height+"px");
-		$(".head img").css("margin-left","-"+($(".head img").width()/2)+"px");
+		$("#box .libox").height(height+"px");
+		$(".headimgs").css("margin-left","-"+($(".headimgs").width()/2)+"px");
+		$(".my_2_top_title").css("line-height",$(".my_2_top_title").height()+"px");
 	}
 	onresize();
 	//浏览器窗口发生改变的时候
@@ -35,38 +36,38 @@ $(function(){
             e.preventDefault();
         }
     }   
-    startX = e.originalEvent.changedTouches[0].pageX,
-    startY = e.originalEvent.changedTouches[0].pageY;
-});
-$("body").on("touchend", function(e) {         
-    // 判断默认行为是否可以被禁用
-    if (e.cancelable) {
-        // 判断默认行为是否已经被禁用
-        if (!e.defaultPrevented) {
-            e.preventDefault();
-        }
-    }               
-    moveEndX = e.originalEvent.changedTouches[0].pageX,
-    moveEndY = e.originalEvent.changedTouches[0].pageY,
-    X = moveEndX - startX,
-    Y = moveEndY - startY;
-    //左滑
-    if ( X > 0 ) {
-     move("down");
-    }
-    //右滑
-    else if ( X < 0 ) {
-    	move("up");
-    }
-    //下滑
-    else if ( Y > 0) {
-    	move("up");
-    }
-    //上滑
-    else if ( Y < 0 ) {
-    	move("down"); 
-    }
-});
+	    startX = e.originalEvent.changedTouches[0].pageX,
+	    startY = e.originalEvent.changedTouches[0].pageY;
+	});
+	$("body").on("touchend", function(e) {         
+	    // 判断默认行为是否可以被禁用
+	    if (e.cancelable) {
+	        // 判断默认行为是否已经被禁用
+	        if (!e.defaultPrevented) {
+	            e.preventDefault();
+	        }
+	    }               
+	    moveEndX = e.originalEvent.changedTouches[0].pageX,
+	    moveEndY = e.originalEvent.changedTouches[0].pageY,
+	    X = moveEndX - startX,
+	    Y = moveEndY - startY;
+	    //左滑
+	    if ( X > 0 ) {
+	     move("down");
+	    }
+	    //右滑
+	    else if ( X < 0 ) {
+	    	move("up");
+	    }
+	    //下滑
+	    else if ( Y > 0) {
+	    	move("up");
+	    }
+	    //上滑
+	    else if ( Y < 0 ) {
+	    	move("down"); 
+	    }
+	});
 	//移动方法
 	function move(direction){
 		 var $this = $(this);

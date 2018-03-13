@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>简单实用的App样式单页全屏滚动布局jQuery插件</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/jq22-demo.css">
+	<style>
+		*{margin:0; padding:0;}
+
+		/* 
+			set overflow-y property to prevent scroll bar mess up the whole layout
+		*/
+		body{margin:0; padding:0; overflow-y: hidden; color:#fff;}
+		li{list-style-type:none;}
+		
+
+		/* styled just for clear visual division of each areas */
+		.op-section{background-color:#1abc9c;}
+		.second{background-color:#3598db;}
+		.third{background-color:#34495e;}
+		.fourth{background-color:#2ecc71;}
+		.fifth{background-color:#8e44ad;}
+		.last{background-color:#f39c12;}
+		
+		
+		#radioWrap{ 
+			width:20px;
+			height:180px;
+			position:absolute;
+			right:5%;
+			top:50%;
+			margin-top: -90px;}
+
+		#radio{width:100%; height:100%; overflow: hidden;}
+
+		#radio li{
+			width:20px;
+			height:20px;
+			background-color: rgba(255,255,255, 0.5);
+			text-indent: -10000px;
+			border-radius: 50%;
+			margin-top: 12px;
+			cursor:pointer;}
+		#radio li:first-child{margin-top:0;}
+		
+		/* 
+			set position to absolute(essential).
+			use margin to adjust gaps between LIs because ApplikeOnePage.js uses .outerHeight(true) method
+			to measure the interval gap to which each radio buttons are placed.
+		*/
+		#radioOn{
+			width:20px;
+			height:20px;
+			margin-bottom:12px;
+			position: absolute;
+			top:0; left:0;
+			background-color: #fff;
+			border-radius: 50%;}
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="view">
+		<div id="frame">
+			<div class="op-section">
+				<header class="jq22-header">
+					<h1>简单实用的App样式单页全屏滚动布局jQuery插件 <span>An an easy-to-use jQuery plugin for quickly building one page layout without the scroll bar</span></h1>				
+				</header>
+			</div>
+			<div class="op-section second">section1</div>
+			<div class="op-section third">section2</div>
+			<div class="op-section fourth">section3</div>
+			<div class="op-section fifth">section4</div>	
+            <div class="op-section fifth">section5</div>		
+		</div>
+	</div>
+	<div id="radioWrap">
+		<ul id="radio">
+			<li>section0</li>
+			<li>section1</li>
+			<li>section2</li>
+			<li>section3</li>
+			<li>section4</li>
+			<li>section5</li>
+		</ul>
+		<span id="radioOn"></span>
+	</div>
+	
+	<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script src="js/onepage.js"></script>
+	<script>
+		$(document).ready(function(){
+			startOnePage({
+				frame: "#view",
+				container: "#frame",
+				sections: ".op-section",
+				radio: "#radio",
+				radioOn: "#radioOn",
+				speed: 500,
+				easing: "swing"
+			});
+		});
+	</script>
+</body>
+</html>

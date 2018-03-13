@@ -86,9 +86,9 @@ $("body").on("touchend", function(e) {
 	        		$("#box").stop().animate({top:"-"+$(window).height()*num+"px"},400);
 	        	}else{
 	        		num<0?num--:num=0;
-	        		$("#box").stop().animate({top:$(window).height()*num+"px"},500);
+	        		$("#box").stop().animate({top:$(window).height()*num+"px"},400);
 	        	}
-		    }, 100));
+		    }, 400));
 		    return false;
 	}
 })

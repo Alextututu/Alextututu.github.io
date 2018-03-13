@@ -72,7 +72,6 @@ $("body").on("touchend", function(e) {
 });
 	//移动方法
 	function move(direction){
-		console.log($(this));
 		 var $this = $(this);
 	        timeoutId = $this.data('timeoutId');
 		    if (timeoutId) {
@@ -84,9 +83,12 @@ $("body").on("touchend", function(e) {
 	        	if(direction=="down"){
 	        		num<4?num++:num=4;
 	        		$("#box").stop().animate({top:"-"+$(window).height()*num+"px"},400);
-	        	}else{
-	        		num<0?num--:num=0;
-	        		$("#box").stop().animate({top:$(window).height()*num+"px"},400);
+	        	}else if(direction=="up"){
+	        		num--;
+	        		if(num<0){
+	        			num=0;
+	        		}
+	        		$("#box").stop().animate({top:"-"+$(window).height()*num+"px"},400);
 	        	}
 		    }, 400));
 		    return false;

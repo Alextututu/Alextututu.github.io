@@ -59,11 +59,11 @@ $("body").on("touchend", function(e) {
     }
     //下滑
     else if ( Y > 0) {
-       move("down");  
+    	move("up");
     }
     //上滑
     else if ( Y < 0 ) {
-        move("up");
+    	move("down");  
     }
     //单击
     else{

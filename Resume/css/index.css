@@ -135,30 +135,30 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		display: list-item;
 	}
 	.my_2_icon{
-		height: 70px;
-		width:70px;
+		height: 60px;
+		width:60px;
 		text-align: center;
-		line-height: 70px;
+		line-height: 60px;
 		font-size: 33px;
 		border-radius: 50%;
 		color: #EDEDED;
 		background: rgba(255,255,255,0.6);
 	}
 	.my_2_text{
-		height: 30px;
+		height: 40px;
 		width: 80px;
 		display: inline-block;
-		line-height: 30px;
+		line-height: 40px;
 		font-size: 14px;
 		color: #EDEDED;
 		margin-top:0 ;
 	}
 	.my_2_top_title{
-		margin:20px 0;
+		margin:10px 0;
 	}
 	.my_2_foot p{
-		margin: 20px 0;
+		margin: 16px 0;
 		color: #EDEDED;
-		font-size: 16px;
+		font-size: 14px;
 	}
 }

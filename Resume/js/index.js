@@ -63,7 +63,7 @@ $("body").on("touchend", function(e) {
     }
     //上滑
     else if ( Y < 0 ) {
-    	move("down");  
+    	move("down"); 
     }
     //单击
     else{

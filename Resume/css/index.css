@@ -17,6 +17,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 #box li{
 	width: 100%;
 	text-align: center;
+	overflow: hidden;
 }
 /*模板一样式*/
 .li_box{
@@ -45,10 +46,22 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	border-bottom: 1px solid #FFFFFF;
 	padding: 20px 0;
 	font-size: 22px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .li_1_text{
 	font-size: 18px;
 	padding: 10px 0;
+}
+@media screen and (max-width: 700px){
+	.motto{
+		border-bottom: 1px solid #FFFFFF;
+		padding: 20px 0;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.li_1_text{
+		font-size: 14px;
+		padding: 6px 0;
+	}
 }

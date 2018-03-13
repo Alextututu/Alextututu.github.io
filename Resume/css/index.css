@@ -161,4 +161,10 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		color: #EDEDED;
 		font-size: 14px;
 	}
+	.my_2_top{
+		height: 60%;
+	}
+	.my_2_foot{
+		height: 40%;
+	}
 }

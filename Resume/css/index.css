@@ -16,4 +16,39 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 }
 #box li{
 	width: 100%;
+	text-align: center;
+}
+/*模板一样式*/
+.li_box{
+	max-width: 90%;
+	height: 100%;
+	color: #FFFFFF;
+}
+.head{
+	height: 50%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.li_1_box{
+	height: 50%;
+	width: 100%;
+}
+.head img{
+	position: absolute;
+	bottom: 20px;
+	border-radius: 50%;
+	height: 50%;
+	left: 50%;
+}
+.motto{
+	border-bottom: 1px solid #FFFFFF;
+	padding: 20px 0;
+	font-size: 22px;
+	margin-bottom: 60px;
+}
+
+.li_1_text{
+	font-size: 18px;
+	padding: 10px 0;
 }

@@ -7,6 +7,7 @@ $(function(){
 		$("body").height(height+"px");
 		$("#box").width(width+"px").height(height*5+"px");
 		$("#box li").height(height+"px");
+		$(".head img").css("margin-left","-"+($(".head img").width()/2)+"px");
 	}
 	onresize();
 	//浏览器窗口发生改变的时候
@@ -64,10 +65,6 @@ $("body").on("touchend", function(e) {
     //上滑
     else if ( Y < 0 ) {
     	move("down"); 
-    }
-    //单击
-    else{
-        alert('单击');    
     }
 });
 	//移动方法

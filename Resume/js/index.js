@@ -53,11 +53,11 @@ $(function(){
 	    Y = moveEndY - startY;
 	    //左滑
 	    if ( X > 0 ) {
-	     move("down");
+//	     move("down");
 	    }
 	    //右滑
 	    else if ( X < 0 ) {
-	    	move("up");
+//	    	move("up");
 	    }
 	    //下滑
 	    else if ( Y > 0) {
@@ -79,7 +79,7 @@ $(function(){
 		        $this.removeData('timeoutId');
 		        $this = null;
 	        	if(direction=="down"){
-	        		num<4?num++:num=4;
+	        		num<5?num++:num=5;
 	        		$("#box").stop().animate({top:"-"+$(window).height()*num+"px"},400);
 	        	}else if(direction=="up"){
 	        		num--;

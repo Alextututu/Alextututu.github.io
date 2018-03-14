@@ -516,4 +516,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		.my_2_top_title{
 			margin: 0px 0 0 0;
 		}
+		.my_2_top ul li{
+			margin: 10px 20px 0 20px;
+		}
 	}

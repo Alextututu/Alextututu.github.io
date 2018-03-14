@@ -65,6 +65,23 @@ $(function(){
 	    //上滑
 	    else if ( Y < 0 ) {
 	    	move("down"); 
+	    }else{
+	    	console.log(e.target);
+	    	if(e.target.getAttribute('class')=="my_2_icon"||e.target.tagName.toLocaleLowerCase()=="i"){
+	    		if(e.target.tagName=="DIV"){
+	    			$(e.target).addClass("waves");
+	    			var time=setInterval(function(){
+						$(e.target).removeClass("waves");
+						clearInterval(time);
+					},1300);
+	    		}else if(e.target.tagName.toLocaleLowerCase()=="i"){
+	    			$(e.target).parent().addClass("waves");
+	    			var time=setInterval(function(){
+						$(e.target).parent().removeClass("waves");
+						clearInterval(time);
+					},1300);
+	    		}
+	    	}
 	    }
 	});
 	//移动方法

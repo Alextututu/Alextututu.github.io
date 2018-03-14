@@ -53,11 +53,11 @@ $(function(){
 	    Y = moveEndY - startY;
 	    //左滑
 	    if ( X > 0 ) {
-//	     move("down");
+	     move("down");
 	    }
 	    //右滑
 	    else if ( X < 0 ) {
-//	    	move("up");
+	    	move("up");
 	    }
 	    //下滑
 	    else if ( Y > 0) {

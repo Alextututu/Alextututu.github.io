@@ -36,12 +36,13 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	width: 100%;
 }
 .head img{
-	position: absolute;
-	bottom: 20px;
 	border-radius: 50%;
 	height: 50%;
+	position: absolute;
 	left: 50%;
+	top: 50%;
 	display: inline-block;
+	transform: translateX(-50%) translateY(-50%);
 }
 .motto{
 	border-bottom: 1px solid #FFFFFF;
@@ -268,6 +269,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	margin-top: -150px;
 	overflow: hidden;
 }
+/*模板四样式*/
 
 
 
@@ -532,6 +534,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		}
 		.my_2_foot_textbox p{
 			font-size: 14px;
-			margin: 12px 0;
+			margin: 14px 0;
 		}
 	}

@@ -67,7 +67,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	height: 20%;
 	font-size: 22px;
 	color: #EDEDED;
-	margin: 80px 0;
+	margin-top: 14px;
 }
 .my_2_ulbox{
 	width: 100%;
@@ -77,7 +77,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 }
 .my_2_top ul{
 	margin: 0 auto;
-	height: 90%;
 	max-width: 800px;
 	display: flex;
 	justify-content:space-around;
@@ -338,9 +337,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		color: #EDEDED;
 		margin-top:0 ;
 	}
-	.my_2_top_title{
-		margin:80px 0;
-	}
 	.my_2_foot p{
 		margin: 16px 0;
 		color: #EDEDED;
@@ -502,7 +498,5 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	}
 	}
 	@media screen and (max-width: 400px){
-		.my_2_top_title{
-			margin: 0px 0 0 0;
-		}
+
 	}

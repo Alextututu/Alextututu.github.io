@@ -352,10 +352,16 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	}
 	/*模块三*/
 	.my_3_top,.my_3_foot{
-		height: 50%;
 		width: 100%;
 		text-align: center;
 	}
+	.my_3_top{
+		height:60%;
+	}
+	.my_3_foot{
+		height: 40%;
+	}
+	
 	.my_3_circle1{
 		margin-top: 30px;
 	}
@@ -495,6 +501,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 }
 @media screen and (max-width: 400px){
 	.my_2_top_title{
-		margin: 30px 0;
+		margin: 10px 0;
 	}
 }

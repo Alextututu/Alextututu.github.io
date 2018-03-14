@@ -7,7 +7,6 @@ $(function(){
 		$("body").height(height+"px");
 		$("#box").width(width+"px").height(height*5+"px");
 		$("#box .libox").height(height+"px");
-//		$(".headimgs").css("margin-left","-"+($(".headimgs").width()/2)+"px");
 		$(".my_2_top_title").css("line-height",$(".my_2_top_title").height()+"px");
 	}
 	onresize();

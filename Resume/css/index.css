@@ -68,7 +68,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	height: 20%;
 	font-size: 22px;
 	color: #EDEDED;
-	margin: 80px 0;
+	margin: 50px 0;
 }
 .my_2_ulbox{
 	width: 100%;
@@ -97,7 +97,9 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	font-size: 44px;
 	border-radius: 50%;
 	color: #EDEDED;
-	background: rgba(255,255,255,0.6);
+	position: relative;
+	z-index: 999;
+	background: rgba(255,255,255,0.7);
 }
 .my_2_text{
 	height: 20px;
@@ -112,6 +114,46 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	color: #EDEDED;
 	font-size: 20px;
 }
+
+.wave, .waves:before, .waves:after {
+	position: absolute;
+	background: white;
+	content: "";
+	display: block;
+	border-radius: 50%;
+	-webkit-backface-visibility: hidden;
+	z-index: 1;
+}
+
+
+.waves:before {
+	width: 100px;
+	height: 100px;
+	animation: wave-animate 1.3s 1 ease-out;
+}
+
+.waves:after {
+	width: 100px;
+	height: 100px;
+    opacity: 0;
+    margin-top: -100px;
+    animation: wave-animate 1s 0.5s 1 ease-out;
+}
+
+@keyframes wave-animate {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    transform-origin: center;
+  }
+}
+
+
 /*模块三*/
 .my_3_top{
 	width: 50%;
@@ -366,6 +408,19 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_2_foot{
 		height: 40%;
 	}
+	.waves:before {
+		width: 60px;
+		height: 60px;
+		animation: wave-animate 1.3s 1 ease-out;
+	}
+	
+	.waves:after {
+		width: 60px;
+		height: 60px;
+	    opacity: 0;
+	    margin-top: -60px;
+	    animation: wave-animate 1s 0.5s 1 ease-out;
+	}
 	/*模块三*/
 	.my_3_top,.my_3_foot{
 		width: 100%;
@@ -517,6 +572,8 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_2_foot_textbox p{
 		font-size: 18px;
 	}
+	
+	
 	}
 	@media screen and (max-width: 400px){
 		.my_2_top_title{

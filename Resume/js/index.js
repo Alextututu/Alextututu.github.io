@@ -90,5 +90,14 @@ $(function(){
 		    }, 400));
 		    return false;
 	}
+	
+	$(".my_2_icon").click(function(){
+		$(this).addClass("waves");
+		var this_=$(this);
+		var time=setInterval(function(){
+			this_.removeClass("waves");
+			clearInterval(time);
+		},1300);
+	})
 })
 

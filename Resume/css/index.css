@@ -501,6 +501,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 }
 @media screen and (max-width: 400px){
 	.my_2_top_title{
-		margin: 10px 0;
+		margin: 0px 0 0 0;
 	}
 }

@@ -100,6 +100,10 @@ $(function(){
 						$(e.target).parent().removeClass("waves");
 						clearInterval(time);
 					},1300);
+	    		}else if(e.target.getAttribute('class')=="my_4_btn_right"){
+	    			rights();
+	    		}else if(e.target.getAttribute('class')=="my_4_btn_left"){
+	    			lefts();
 	    		}
 	    	}
 	    }
@@ -149,25 +153,14 @@ $(function(){
 	});
 	//点击切换
 	$(".my_4_btn_right").click(function(){
-		$(".my_4_block").animate({
-                'height': '0',
-                'top': '50%'
-            }, 140).animate({
-            	'height': '100%',
-                'top': '0'
-            },140)
-            arrnum++;
-            if(arrnum>2){
-            	arrnum=0;
-            }
-			var timer=setInterval(function(){
-				$(".my_4_block p").text(arr[arrnum].name);
-				$(".my_4_block span").text(arr[arrnum].texts);
-				$(".my_4_block a").attr("href",arr[arrnum].hrefs);
-				clearInterval(timer);
-			},100)
+		rights();
 	});
 	$(".my_4_btn_left").click(function(){
+		lefts();
+	});
+	
+	//上一个函数
+	function lefts(){
 		$(".my_4_block").animate({
                 'height': '0',
                 'top': '50%'
@@ -185,6 +178,28 @@ $(function(){
 				$(".my_4_block a").attr("href",arr[arrnum].hrefs);
 				clearInterval(timer);
 			},100)
-	});
-})
+	}
+	//下一个函数
+	function rights(){
+		$(".my_4_block").animate({
+                'height': '0',
+                'top': '50%'
+            }, 140).animate({
+            	'height': '100%',
+                'top': '0'
+            },140)
+            arrnum++;
+            if(arrnum>2){
+            	arrnum=0;
+            }
+			var timer=setInterval(function(){
+				$(".my_4_block p").text(arr[arrnum].name);
+				$(".my_4_block span").text(arr[arrnum].texts);
+				$(".my_4_block a").attr("href",arr[arrnum].hrefs);
+				clearInterval(timer);
+			},100)
+	}
+	
+	
+});
 

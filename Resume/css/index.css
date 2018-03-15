@@ -326,7 +326,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .my_4_dbox{
 	max-width: 1200px;
 	height: 100%;
-	border:1px solid red;
 	position: relative;
 }
 .my_4_box_li{
@@ -708,14 +707,14 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		outline: none;
 	}
 	.my_4_btn_left{
-		left: 6px;
+		left: 0px;
 		top: 50%;
 	}
 	.my-4{
 		position: relative;
 	}
 	.my_4_btn_right{
-		right: 6px;
+		right: 0px;
 		top: 50%;
 	}
 }

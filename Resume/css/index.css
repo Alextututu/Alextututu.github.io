@@ -327,16 +327,82 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	max-width: 1200px;
 	height: 100%;
 	border:1px solid red;
+	position: relative;
 }
 .my_4_box_li{
-	border:1px solid red;
 	width:23.3%;
 	height: 500px;
 	margin: 0 5%;
 	float: left;
 	position: relative;
+	border-radius: 4px;
     top: 50%;
+    padding: 0 20px;
     transform: translateY(-50%);
+    overflow: hidden;
+    color: #434343;
+    background: rgba(245,245,245,0.9);
+	box-shadow: 0px 0px 10px 0px #F5F5F5;
+    transition: box-shadow 0.3s;
+	-moz-transition: box-shadow 0.3s;
+	-webkit-transition: box-shadow 0.3s;
+}
+.my_4_boxli_divide{
+	width: 100%;
+	text-align:justify;
+	overflow: hidden;
+}
+.my_4_boxli_divide:nth-child(1){
+	height: 14%;
+}
+.my_4_boxli_divide:nth-child(3){
+	height: 14%;
+}
+.my_4_boxli_divide:nth-child(2){
+	height: 72%;
+}
+
+.my_4_boxli_divide p{
+	font-size: 24px;
+	text-align: center;
+	height: 100%;
+}
+.my_4_boxli_divide span{
+	display: inline-block;
+	line-height: 30px;
+}
+.my_4_boxli_divide a{
+	border:1px solid #5A5A55;
+	border-radius: 4px;
+	width: 100%;
+	text-align: center;
+	padding: 8px 0;
+}
+.trasition0{
+	animation: trasit 0.7s 1;
+}
+.trasition1{
+	animation: trasit 1.1s 1;
+}
+.trasition2{
+	animation: trasit 1.4s 1;
+}
+.my_4_btn_left,.my_4_btn_right{
+	display: none;
+}
+
+/*淡入淡出动画*/
+@keyframes trasit{
+	0%{
+		opacity: 0;
+		top: 1200px;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 /*旋转360动画*/
@@ -378,7 +444,23 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 
 
 /*清除浮动*/
-.my_3_foot:after,.my_3_top:after{clear: both;}
+.my_4_box_li:after,.my_3_foot:after,.my_3_top:after{clear: both;}
+/*============================当切换屏幕尺寸的时候=============================*/
+@media screen and (max-width: 900px){
+	.my_4_box_li{
+		height: 360px;
+	}
+	.my_4_boxli_divide p{
+		font-size: 20px;
+		text-align: center;
+		height: 100%;
+	}
+	.my_4_boxli_divide span{
+		display: inline-block;
+		line-height: 20px;
+		font-size: 14px;
+	}
+}
 @media screen and (max-width: 700px){
 	/*模板一*/
 	.motto{
@@ -596,8 +678,47 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_2_foot_textbox p{
 		font-size: 18px;
 	}
-
+	/*模板四*/
+	.my_4_block{
+		top: 0;
+		left: 0;
+		transform: translateY(0);
+		width: 100%;
+		height: 100%;
+		margin: 0;
 	}
+	.my_4_dbox{
+		padding: 14%;
+	}
+	.my_4_none{
+		display: none;
+	}
+	.my_4_btn_left,.my_4_btn_right{
+		display: block;
+		border:none;
+		background: transparent;
+		width:40px;
+		font-size: 24px;
+		height: 40px;
+		opacity: 0.9;
+		text-align: center;
+		border-radius: 50%;
+		color: #F5F5F5;
+		position: absolute;
+		outline: none;
+	}
+	.my_4_btn_left{
+		left: 6px;
+		top: 50%;
+	}
+	.my-4{
+		position: relative;
+	}
+	.my_4_btn_right{
+		right: 6px;
+		top: 50%;
+	}
+}
 	@media screen and (max-width: 400px){
 		.my_2_top_title{
 			margin: 0px 0 0 0;

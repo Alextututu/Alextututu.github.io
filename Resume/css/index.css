@@ -312,8 +312,21 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	overflow: hidden;
 }
 /*模板四样式*/
-
-
+.my_4_dbox{
+	max-width: 1200px;
+	height: 100%;
+	border:1px solid red;
+}
+.my_4_box_li{
+	border:1px solid red;
+	width:23.3%;
+	height: 500px;
+	margin: 0 5%;
+	float: left;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*旋转360动画*/
 @keyframes animtran {
@@ -572,8 +585,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_2_foot_textbox p{
 		font-size: 18px;
 	}
-	
-	
+
 	}
 	@media screen and (max-width: 400px){
 		.my_2_top_title{

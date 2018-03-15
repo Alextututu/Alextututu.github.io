@@ -447,6 +447,12 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .my_4_box_li:after,.my_3_foot:after,.my_3_top:after{clear: both;}
 /*============================当切换屏幕尺寸的时候=============================*/
 @media screen and (max-width: 900px){
+	#box{
+	  background: -webkit-linear-gradient(#8EFFCE,#DE5AFF, #0DBEFA); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#8EFFCE,#DE5AFF, #0DBEFA); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#8EFFCE,#DE5AFF, #0DBEFA); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#8EFFCE,#DE5AFF, #0DBEFA); /* 标准的语法 */
+}
 	.my_4_box_li{
 		height: 360px;
 	}

@@ -13,10 +13,10 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	position: absolute;
 	top: 0;
 	left: 0;
-	  background: -webkit-linear-gradient(left top,#7EFFC6,#DE5AFF, #0DBEFA); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(bottom right,#7EFFC6,#DE5AFF, #0DBEFA); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(bottom right,#7EFFC6,#DE5AFF, #0DBEFA); /* Firefox 3.6 - 15 */
-  background: linear-gradient(to bottom right,#7EFFC6,#DE5AFF, #0DBEFA); /* 标准的语法 */
+	background: -webkit-linear-gradient(left top,#43A7E8,#EA52D1, #AD39E5); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(bottom right,#43A7E8,#EA52D1, #AD39E5); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(bottom right,#43A7E8,#EA52D1, #AD39E5); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to bottom right,#43A7E8,#EA52D1, #AD39E5); /* 标准的语法 */
 }
 #box li.libox{
 	width: 100%;
@@ -448,11 +448,11 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 /*============================当切换屏幕尺寸的时候=============================*/
 @media screen and (max-width: 900px){
 	#box{
-	  background: -webkit-linear-gradient(#7EFFC6,#DE5AFF, #0DBEFA); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(#7EFFC6,#DE5AFF, #0DBEFA); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(#7EFFC6,#DE5AFF, #0DBEFA); /* Firefox 3.6 - 15 */
-  background: linear-gradient(#7EFFC6,#DE5AFF, #0DBEFA); /* 标准的语法 */
-}
+	background: -webkit-linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* 标准的语法 */
+	}
 	.my_4_box_li{
 		height: 360px;
 	}

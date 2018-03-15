@@ -24,7 +24,7 @@ $(function(){
 		var height=$(window).height();
 		$("body").width(width+"px");
 		$("body").height(height+"px");
-		$("#box").width(width+"px").height(height*5+"px");
+		$("#box").width(width+"px").height(height*6+"px");
 		$("#box .libox").height(height+"px");
 		$(".my_2_top_title").css("line-height",$(".my_2_top_title").height()+"px");
 		$("#box").css("top","-"+$(".my-1").height()*num+"px");

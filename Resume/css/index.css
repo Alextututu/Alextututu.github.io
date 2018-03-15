@@ -13,6 +13,10 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	position: absolute;
 	top: 0;
 	left: 0;
+	background: -webkit-linear-gradient(left, #F93C77 , #8E64F6); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient( right, #F93C77, #8E64F6); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient( right, #F93C77, #8E64F6); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to  right, #F93C77 , #8E64F6); /* 标准的语法 */
 }
 #box li.libox{
 	width: 100%;
@@ -20,9 +24,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	overflow: hidden;
 }
 /*模板一样式*/
-.my-1,.my-2,.my-3,.my-4,.my-5,.my-6{
-	background: url(../img/bg.png) no-repeat;
-}
 .li_box{
 	max-width: 90%;
 	height: 100%;

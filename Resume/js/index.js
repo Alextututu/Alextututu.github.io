@@ -13,7 +13,7 @@ $(function(){
 		},
 		{
 			name:"个人简历",
-			texts:"本简历，使用单页全屏滚屏布局，响应式页面范围：PC至移动端全范围，mousewheel事件做到兼容firefox、chrome、IE；移动端利用touchstart来响应浏览者的触屏操作。技能点为jQuery和CSS3动画效果",
+			texts:"本简历，使用单页全屏滚屏布局，尽可能的响应PC至移动端全范围，mousewheel事件做到兼容firefox、chrome、IE；移动端利用touchstart来响应浏览者的触屏操作。技能点为jQuery和CSS3动画效果",
 			hrefs:"https://alextututu.github.io/Resume/index.html"
 		}
 	]
@@ -202,7 +202,6 @@ $(function(){
             	arrnum=0;
             }
 	}
-	
 	
 });
 

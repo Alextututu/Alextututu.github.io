@@ -13,24 +13,17 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	position: absolute;
 	top: 0;
 	left: 0;
-	
+	  background: -webkit-linear-gradient(left top,#8EFFCE,#DE5AFF, #0DBEFA); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom right,#8EFFCE,#DE5AFF, #0DBEFA); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom right,#8EFFCE,#DE5AFF, #0DBEFA); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom right,#8EFFCE,#DE5AFF, #0DBEFA); /* 标准的语法 */
 }
 #box li.libox{
 	width: 100%;
 	text-align: center;
 	overflow: hidden;
 }
-.my-1,.my-3,.my-5{
-  background: -webkit-linear-gradient(#F93C77, #8E64F6); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(#F93C77, #8E64F6); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(#F93C77, #8E64F6); /* Firefox 3.6 - 15 */
-  background: linear-gradient(#F93C77, #8E64F6); /* 标准的语法 */}
-.my-2,.my-4,.my-6{
-  background: -webkit-linear-gradient(#8E64F6, #F93C77); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(#8E64F6, #F93C77); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(#8E64F6, #F93C77); /* Firefox 3.6 - 15 */
-  background: linear-gradient(#8E64F6, #F93C77); /* 标准的语法 */
-}
+
 /*模板一样式*/
 .li_box{
 	max-width: 90%;
@@ -64,11 +57,11 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .motto{
 	border-bottom: 1px solid #FFFFFF;
 	padding: 20px 0;
-	font-size: 22px;
+	font-size: 26px;
 	margin-bottom: 50px;
 }
 .li_1_text{
-	font-size: 18px;
+	font-size: 20px;
 	padding: 10px 0;
 }
 /*模板二样式*/

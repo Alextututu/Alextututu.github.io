@@ -100,12 +100,12 @@ $(function(){
 						$(e.target).parent().removeClass("waves");
 						clearInterval(time);
 					},1300);
-	    		}else if(e.target.getAttribute('class')=="my_4_btn_right"){
-	    			rights();
-	    		}else if(e.target.getAttribute('class')=="my_4_btn_left"){
-	    			lefts();
 	    		}
-	    	}
+	    	}else if(e.target.getAttribute('class')=="my_4_btn_right"){
+    			rights();
+    		}else if(e.target.getAttribute('class')=="my_4_btn_left"){
+    			lefts();
+    		}
 	    }
 	});
 	//移动方法
@@ -164,7 +164,14 @@ $(function(){
 		$(".my_4_block").animate({
                 'height': '0',
                 'top': '50%'
-            }, 140).animate({
+            }, 140,function(){
+	            	var timer=setInterval(function(){
+					$(".my_4_block p").text(arr[arrnum].name);
+					$(".my_4_block span").text(arr[arrnum].texts);
+					$(".my_4_block a").attr("href",arr[arrnum].hrefs);
+					clearInterval(timer);
+				},100)
+            }).animate({
             	'height': '100%',
                 'top': '0'
             },140)
@@ -172,19 +179,21 @@ $(function(){
             if(arrnum<0){
             	arrnum=2;
             }
-			var timer=setInterval(function(){
-				$(".my_4_block p").text(arr[arrnum].name);
-				$(".my_4_block span").text(arr[arrnum].texts);
-				$(".my_4_block a").attr("href",arr[arrnum].hrefs);
-				clearInterval(timer);
-			},100)
+			
 	}
 	//下一个函数
 	function rights(){
 		$(".my_4_block").animate({
                 'height': '0',
                 'top': '50%'
-            }, 140).animate({
+            }, 140,function(){
+            		var timer=setInterval(function(){
+					$(".my_4_block p").text(arr[arrnum].name);
+					$(".my_4_block span").text(arr[arrnum].texts);
+					$(".my_4_block a").attr("href",arr[arrnum].hrefs);
+					clearInterval(timer);
+				},100)
+            }).animate({
             	'height': '100%',
                 'top': '0'
             },140)
@@ -192,12 +201,6 @@ $(function(){
             if(arrnum>2){
             	arrnum=0;
             }
-			var timer=setInterval(function(){
-				$(".my_4_block p").text(arr[arrnum].name);
-				$(".my_4_block span").text(arr[arrnum].texts);
-				$(".my_4_block a").attr("href",arr[arrnum].hrefs);
-				clearInterval(timer);
-			},100)
 	}
 	
 	

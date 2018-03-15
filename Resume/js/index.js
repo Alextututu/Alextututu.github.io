@@ -29,6 +29,11 @@ $(function(){
 		$(".my_2_top_title").css("line-height",$(".my_2_top_title").height()+"px");
 		$("#box").css("top","-"+$(".my-1").height()*num+"px");
 		$(".my_4_title").css("line-height",$(".my_4_title").height()+"px");
+		if($(window).width()<700){
+			$(".my_4_box_li").removeClass("my_box");
+		}else{
+			$(".my_4_box_li").addClass("my_box");
+		}
 	}
 	onresize();
 	//浏览器窗口发生改变的时候

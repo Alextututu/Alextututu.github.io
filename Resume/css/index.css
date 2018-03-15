@@ -121,7 +121,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .my_2_foot p{
 	margin: 20px 0;
 	color: #EDEDED;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .wave, .waves:before, .waves:after {
@@ -321,7 +321,9 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	overflow: hidden;
 }
 .my_2_foot_textbox p{
+	font-size: 22px;
 	color: #FFFFFF;
+	letter-spacing: 2px;
 }
 /*模板四样式*/
 .my_4_dbox{
@@ -341,9 +343,15 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
     transform: translateY(-50%);
     overflow: hidden;
     color: #434343;
-    background: rgba(245,245,245,0.9);
-	box-shadow: 0px 0px 10px 0px #F5F5F5;
-    transition: box-shadow 0.3s;
+	box-shadow: 0px 0px 20px 0px #B200A5;
+	transition: box-shadow 0.3s;
+	-moz-transition: box-shadow 0.3s;
+	-webkit-transition: box-shadow 0.3s;
+	background: rgba(209,209,209,0.5);
+}
+.my_box:hover{
+	box-shadow: 0px 0px 20px 0px #640086;
+	transition: box-shadow 0.3s;
 	-moz-transition: box-shadow 0.3s;
 	-webkit-transition: box-shadow 0.3s;
 }
@@ -366,17 +374,20 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	font-size: 24px;
 	text-align: center;
 	height: 100%;
+	color: #F5F5F5;
 }
 .my_4_boxli_divide span{
 	display: inline-block;
 	line-height: 30px;
+	color: #F5F5F5;
 }
 .my_4_boxli_divide a{
-	border:1px solid #5A5A55;
+	border:1px solid #F5F5F5;
 	border-radius: 4px;
 	width: 100%;
 	text-align: center;
 	padding: 8px 0;
+	color: #F5F5F5;
 }
 .trasition0{
 	animation: trasit 0.7s 1;
@@ -448,10 +459,10 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 /*============================当切换屏幕尺寸的时候=============================*/
 @media screen and (max-width: 900px){
 	#box{
-	background: -webkit-linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* Safari 5.1 - 6.0 */
-	background: -o-linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* Opera 11.1 - 12.0 */
-	background: -moz-linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* Firefox 3.6 - 15 */
-	background: linear-gradient(#76C4FF,#EA52D1, #AD39E5); /* 标准的语法 */
+	background: -webkit-linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* 标准的语法 */
 	}
 	.my_4_box_li{
 		height: 360px;

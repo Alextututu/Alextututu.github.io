@@ -19,7 +19,7 @@ $(function(){
 	]
 	var hg=0;
 	function onresize(){
-		//获取屏幕高宽
+		//获取屏幕高宽 
 		var width=$(window).width();
 		var height=$(window).height();
 		$("body").width(width+"px");

@@ -19,6 +19,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	text-align: center;
 	overflow: hidden;
 	background: url(../img/bg.png) no-repeat;
+	background-size: auto;
 }
 
 /*模板一样式*/

@@ -19,8 +19,85 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	text-align: center;
 	overflow: hidden;
 	background: url(../img/bg.png) no-repeat;
-	background-size: auto;
+	background-size: 100% 100%;
+	background-attachment:fixed;
 }
+
+.my-1{
+	position: relative;
+}
+.arrowss {
+  position: absolute;
+  left: 50%;
+  top: 96%;
+  -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-1 {
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+          animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-2 {
+  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+          animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrowss:before,
+.arrowss:after {
+  background: #0F6400;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+}
+
+.arrowss:before {
+  -webkit-transform: rotate(45deg) translateX(-24%);
+          transform: rotate(45deg) translateX(-24%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.arrowss:after {
+  -webkit-transform: rotate(-45deg) translateX(24%);
+          transform: rotate(-45deg) translateX(24%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+@-webkit-keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 94%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 94%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 /*模板一样式*/
 .li_box{

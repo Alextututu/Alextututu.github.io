@@ -797,6 +797,21 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_4_boxli_divide span{
 		line-height: 30px;
 	}
+	
+	.my_6_box p{
+		font-size: 18px;
+	}
+	
+	.my_6_box a{
+		margin: 20px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.my_6_box a:nth-child(7){
+		font-size: 28px;
+	}
 }
 	@media screen and (max-width: 400px){
 		.my_2_top_title{
@@ -818,5 +833,19 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		}
 		.my_4_boxli_divide span{
 			line-height: 28px;
+		}
+		.my_6_box p{
+			font-size: 16px;
+		}
+		
+		.my_6_box a{
+			margin: 20px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 18px;
+		}
+		.my_6_box a:nth-child(7){
+			font-size: 26px;
 		}
 	}

@@ -225,9 +225,9 @@ $(function(){
     system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false;
 
     if (system.win || system.mac || system.xll ||system.ipad) {
-      	alert("PC");
+		$(".myqq").attr("href","tencent://message/?uin=969289239&Site=http://vps.shuidazhe.com&Menu=yes");
     } else {
-		alert("移动");
+		$(".myqq").attr("href","mqqwpa://im/chat?chat_type=wpa&uin=969289239&version=1&src_type=web&web_src=oicqzone.com");
     }
 
 });

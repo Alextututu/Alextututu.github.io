@@ -116,9 +116,9 @@ $(function(){
 		        $this.removeData('timeoutId');
 		        $this = null;
 	        	if(direction=="down"){
-	        		num<5?num++:num=5;
+	        		num<4?num++:num=4;
 	        		$("#box").stop().animate({top:"-"+$(window).height()*num+"px"},400);
-	        		if(num==5){
+	        		if(num==4){
 	        			$(".my_6_box p").eq(0).addClass("six_1");
 		        		$(".my_6_box p").eq(1).addClass("six_2");
 		        		$(".my_6_box p").eq(2).addClass("six_3");

@@ -118,6 +118,14 @@ $(function(){
 	        	if(direction=="down"){
 	        		num<5?num++:num=5;
 	        		$("#box").stop().animate({top:"-"+$(window).height()*num+"px"},400);
+	        		if(num==5){
+	        			$(".my_6_box p").eq(0).addClass("six_1");
+		        		$(".my_6_box p").eq(1).addClass("six_2");
+		        		$(".my_6_box p").eq(2).addClass("six_3");
+		        		$(".my_6_box p").eq(3).addClass("six_4");
+		        		$(".my_6_box p").eq(4).addClass("six_5");
+		        		$(".my_6_box a").addClass("heights");
+	        		}
 	        	}else if(direction=="up"){
 	        		num--;
 	        		if(num<0){
@@ -200,5 +208,27 @@ $(function(){
             }
 	}
 	
+	//监测设备
+	var system = {
+        win: false,
+        mac: false,
+        xll: false,
+        ipad:false
+    };
+
+    //检测平台
+    var p = navigator.platform;
+
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false;
+
+    if (system.win || system.mac || system.xll ||system.ipad) {
+      	alert("PC");
+    } else {
+		alert("移动");
+    }
+
 });
 

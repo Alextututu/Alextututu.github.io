@@ -402,7 +402,79 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	display: none;
 }
 
-/*淡入淡出动画*/
+/*模块6*/
+.my_6_box{
+	max-width: 800px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.my_6_box p{
+	font-size: 22px;
+	color: #FFFFFF;
+	margin: 22px 0;
+}
+.my_6_box p:nth-child(1){
+	margin-top: 0;
+}
+
+.my_6_box a{
+	color: #FFFFFF;
+	border-radius: 50%;
+	margin: 20px;
+	border:1px solid #FFFFFF;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	overflow: hidden;
+	font-size: 24px;
+}
+.my_6_box a:nth-child(7){
+	font-size: 32px;
+}
+.six_1{
+	animation: sixtrasit 0.8s 1;
+}
+.six_2{
+	animation: sixtrasit 1.3s 1;
+}
+.six_3{
+	animation: sixtrasit 1.9s 1;
+}
+.six_4{
+	animation: sixtrasit 2.5s 1;
+}
+.six_5{
+	animation: sixtrasit 3.1s 1;
+}
+.heights{
+	animation: heights 2.6s 1;
+}
+@keyframes heights{
+	from{
+		height: 0;
+	}
+	to{
+		height: 60px;
+	}
+}
+/*模块六淡入淡出动画*/
+@keyframes sixtrasit{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+/*模块四淡入淡出动画*/
 @keyframes trasit{
 	0%{
 		opacity: 0;

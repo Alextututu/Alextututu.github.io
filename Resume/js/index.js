@@ -76,21 +76,13 @@ $(function(){
 	    moveEndY = e.originalEvent.changedTouches[0].pageY,
 	    X = moveEndX - startX,
 	    Y = moveEndY - startY;
-	    //左滑
-	    if ( X > 0 ) {
+	    //上滑
+	    if ( Y < 0 ) {
 	     move("down");
 	    }
-	    //右滑
-	    else if ( X < 0 ) {
-	    	move("up");
-	    }
 	    //下滑
-	    else if ( Y > 0) {
+	    else if ( Y > 0 ) {
 	    	move("up");
-	    }
-	    //上滑
-	    else if ( Y < 0 ) {
-	    	move("down"); 
 	    }else{
 	    	if(e.target.getAttribute('class')=="my_2_icon"||e.target.tagName.toLocaleLowerCase()=="i"){
 	    		if(e.target.tagName=="DIV"){

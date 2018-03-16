@@ -13,22 +13,19 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: -webkit-linear-gradient(left top,#43A7E8,#EA52D1, #AD39E5); /* Safari 5.1 - 6.0 */
-	background: -o-linear-gradient(bottom right,#43A7E8,#EA52D1, #AD39E5); /* Opera 11.1 - 12.0 */
-	background: -moz-linear-gradient(bottom right,#43A7E8,#EA52D1, #AD39E5); /* Firefox 3.6 - 15 */
-	background: linear-gradient(to bottom right,#43A7E8,#EA52D1, #AD39E5); /* 标准的语法 */
 }
 #box li.libox{
 	width: 100%;
 	text-align: center;
 	overflow: hidden;
+	background: url(../img/bg.png) no-repeat;
 }
 
 /*模板一样式*/
 .li_box{
 	max-width: 90%;
 	height: 100%;
-	color: #FFFFFF;
+	color: #0F6400;
 }
 .head{
 	height: 50%;
@@ -55,7 +52,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	-webkit-transition: box-shadow 0.3s;
 }
 .motto{
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid #0F6400;
 	padding: 20px 0;
 	font-size: 26px;
 	margin-bottom: 50px;
@@ -108,7 +105,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	color: #EDEDED;
 	position: relative;
 	z-index: 999;
-	background: rgba(255,255,255,0.7);
+	background: rgba(15,100,0,0.7);
 }
 .my_2_text{
 	height: 20px;
@@ -116,17 +113,17 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	display: inline-block;
 	margin-top: 20px;
 	font-size: 18px;
-	color: #EDEDED;
+	color: #0F6400;
 }
 .my_2_foot p{
 	margin: 20px 0;
-	color: #EDEDED;
+	color: #0F6400;
 	font-size: 22px;
 }
 
 .wave, .waves:before, .waves:after {
 	position: absolute;
-	background: white;
+	background: #0F6400;
 	content: "";
 	display: block;
 	border-radius: 50%;
@@ -322,7 +319,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 }
 .my_2_foot_textbox p{
 	font-size: 22px;
-	color: #FFFFFF;
+	color: #0F6400;
 	letter-spacing: 2px;
 }
 /*模板四样式*/
@@ -342,15 +339,15 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
     padding: 0 20px;
     transform: translateY(-50%);
     overflow: hidden;
-    color: #434343;
-	box-shadow: 0px 0px 20px 0px #B200A5;
+    color: #0F6400;
+	box-shadow: 0px 0px 20px 0px #0F6400;
 	transition: box-shadow 0.3s;
 	-moz-transition: box-shadow 0.3s;
 	-webkit-transition: box-shadow 0.3s;
-	background: rgba(209,209,209,0.5);
+	background: rgba(165,219,157,0.5);
 }
 .my_box:hover{
-	box-shadow: 0px 0px 20px 0px #640086;
+	box-shadow: 0px 0px 20px 0px #0F6400;
 	transition: box-shadow 0.3s;
 	-moz-transition: box-shadow 0.3s;
 	-webkit-transition: box-shadow 0.3s;
@@ -374,20 +371,20 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	font-size: 24px;
 	text-align: center;
 	height: 100%;
-	color: #F5F5F5;
+	color: #0F6400;
 }
 .my_4_boxli_divide span{
 	display: inline-block;
 	line-height: 30px;
-	color: #F5F5F5;
+	color: #0F6400;
 }
 .my_4_boxli_divide a{
-	border:1px solid #F5F5F5;
+	border:1px solid #67B755;
 	border-radius: 4px;
 	width: 100%;
 	text-align: center;
 	padding: 8px 0;
-	color: #F5F5F5;
+	color: #0F6400;
 }
 .trasition0{
 	animation: trasit 0.7s 1;
@@ -412,7 +409,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 
 .my_6_box p{
 	font-size: 22px;
-	color: #FFFFFF;
+	color: #0F6400;
 	margin: 22px 0;
 }
 .my_6_box p:nth-child(1){
@@ -420,10 +417,10 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 }
 
 .my_6_box a{
-	color: #FFFFFF;
+	color: #0F6400;
 	border-radius: 50%;
 	margin: 20px;
-	border:1px solid #FFFFFF;
+	border:1px solid #0F6400;
 	width: 60px;
 	height: 60px;
 	line-height: 60px;
@@ -530,12 +527,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .my_4_box_li:after,.my_3_foot:after,.my_3_top:after{clear: both;}
 /*============================当切换屏幕尺寸的时候=============================*/
 @media screen and (max-width: 900px){
-	#box{
-	background: -webkit-linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* Safari 5.1 - 6.0 */
-	background: -o-linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* Opera 11.1 - 12.0 */
-	background: -moz-linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* Firefox 3.6 - 15 */
-	background: linear-gradient(#67BCFF,#EA52D1, #AD39E5); /* 标准的语法 */
-	}
 	.my_4_box_li{
 		height: 360px;
 	}
@@ -553,7 +544,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 @media screen and (max-width: 700px){
 	/*模板一*/
 	.motto{
-		border-bottom: 1px solid #FFFFFF;
 		padding: 10px 0;
 		font-size: 16px;
 		margin-bottom: 20px;
@@ -577,8 +567,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		line-height: 60px;
 		font-size: 33px;
 		border-radius: 50%;
-		color: #EDEDED;
-		background: rgba(255,255,255,0.6);
 	}
 	.my_2_text{
 		height: 40px;
@@ -586,7 +574,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		display: inline-block;
 		line-height: 40px;
 		font-size: 14px;
-		color: #EDEDED;
 		margin-top:0 ;
 	}
 	.my_2_top_title{
@@ -594,7 +581,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	}
 	.my_2_foot p{
 		margin: 16px 0;
-		color: #EDEDED;
 		font-size: 14px;
 	}
 	.my_2_top{
@@ -779,7 +765,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		opacity: 0.9;
 		text-align: center;
 		border-radius: 50%;
-		color: #F5F5F5;
+		color: #0F6400;
 		position: absolute;
 		outline: none;
 	}

@@ -102,6 +102,8 @@ $(function(){
     			rights();
     		}else if(e.target.getAttribute('class')=="my_4_btn_left"){
     			lefts();
+    		}else if(e.target.tagName=="A"){
+    			window.location.href=e.target.getAttribute("href");
     		}
 	    }
 	});

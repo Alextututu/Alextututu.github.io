@@ -1,0 +1,36 @@
+#Logins_box{
+    width: 100%;
+    padding:10px;
+}
+#Logins_box input,#Logins_box button{
+    width: 100%;
+}
+#Logins_box input{
+    border:none;
+    padding:8px 8px 8px 40px;
+    font-size: 16px;
+    line-height: 16px;
+    background: url("../img/geren.png") no-repeat;
+    background-position-x: 6px;
+    background-position-y: 6px;
+    border-bottom: 2px solid #DEDEDE;
+    margin: 10px;
+    outline: none;
+}
+#Logins_box button{
+    text-align: center;
+    border:1px solid #CE3956;
+    outline: none;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin: 10px 0;
+} 
+
+#Logins_box button:nth-child(3){
+    background:#CE3956;
+    color: #FFFFFF;
+}
+#Logins_box button:nth-child(4){
+    background:#FFFFFF;
+    color: #CE3956;
+}

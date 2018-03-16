@@ -179,7 +179,7 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .my_3_circle1{
 	width: 340px;
 	height:340px;
-	border:2px dashed red;
+	border:2px dashed #F72E39;
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
@@ -209,39 +209,39 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .my_3_circle_div1{
 	top: -32px;
 	left: 132px;
-	background: #FF8E34;
+	background: rgba(232,46,211,0.9);
 }
 .my_3_circle_div2{
 	top: 60px;
 	left: 284px;
-	background: #F5DB27;
+	background: rgba(41,180,240,0.9);
 }
 .my_3_circle_div3{
 	top: 230px;
 	left: 270px;
-	background: #C1E815;
+	background: rgba(41,229,111,0.9);
 }
 .my_3_circle_div4{
 	top:300px;
 	left:132px;
-	background: #29F093;
+	background: rgba(198,242,54,0.9);
 }
 .my_3_circle_div5{
 	top:230px;
 	left: 0px;
-	background: #29B4F0;
+	background: rgba(242,160,54,0.9);
 }
 .my_3_circle_div6{
 	top: 60px;
 	left: -16px;
-	background: #B467F5;
+	background: rgba(126,232,247,0.9);
 }
 /*第二圈外圈*/
 .my_3_divs2{
 	width: 180px;
 	height: 180px;
 	border-radius: 50%;
-	border:1px solid blue;
+	border:2px dashed #6F52E5;
 	position: absolute;
 	top: 50%;
 	margin-top: -90px;
@@ -265,29 +265,29 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 .my_3_divs2_1{
 	top: 0;
 	left: 0;
-	background: #EA5FF0;
+	background: rgba(234,95,240,0.9);
 }
 .my_3_divs2_2{
 	top: 0;
 	left: 130px;
-	background: #F05F95;
+	background: rgba(88,209,103,0.9);
 }
 .my_3_divs2_3{
 	top: 120px;
 	left: 130px;
-	background: #F0795F;
+	background: rgba(211,211,211,0.9);
 }
 .my_3_divs2_4{
 	top: 120px;
 	left: 0;
-	background: #58D167;
+	background: rgba(245,129,173,0.9);
 }
 /*三圈*/
 .my_3_divs3{
 	position: absolute;
 	width: 56px;
 	height: 56px;
-	border:1px solid deepskyblue;
+	border:1px solid #9DB9F2;
 	border-radius:50%;
 	left: 50%;
 	top: 50%;
@@ -563,7 +563,6 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_3_circle1{
 		width: 240px;
 		height:240px;
-		border:2px dashed red;
 		border-radius: 50%;
 		position: absolute;
 		top: 50%;
@@ -593,40 +592,33 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_3_circle_div1{
 		top: -26px;
 		left: 90px;
-		background: #FF8E34;
 	}
 	.my_3_circle_div2{
 		top: 36px;
 		left: 196px;
-		background: #F5DB27;
 	}
 	.my_3_circle_div3{
 		top: 150px;
 		left: 196px;
-		background: #C1E815;
 	}
 	.my_3_circle_div4{
 		top:208px;
 		left:90px;
 		font-size: 8px;
-		background: #29F093;
 	}
 	.my_3_circle_div5{
 		top:150px;
 		left: -10px;
-		background: #29B4F0;
 	}
 	.my_3_circle_div6{
 		top: 36px;
 		left: -10px;
-		background: #B467F5;
 	}
 	/*第二圈外圈*/
 	.my_3_divs2{
 		width: 140px;
 		height: 140px;
 		border-radius: 50%;
-		border:1px solid blue;
 		position: absolute;
 		top: 50%;
 		margin-top: -70px;
@@ -650,29 +642,24 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_3_divs2_1{
 		top: 0;
 		left: 0;
-		background: #EA5FF0;
 	}
 	.my_3_divs2_2{
 		top: 0;
 		left: 98px;
-		background: #F05F95;
 	}
 	.my_3_divs2_3{
 		top: 98px;
 		left: 98px;
-		background: #F0795F;
 	}
 	.my_3_divs2_4{
 		top: 98px;
 		left: 0;
-		background: #58D167;
 	}
 	/*三圈*/
 	.my_3_divs3{
 		position: absolute;
 		width: 56px;
 		height: 56px;
-		border:1px solid deepskyblue;
 		border-radius:50%;
 		left: 50%;
 		top: 50%;

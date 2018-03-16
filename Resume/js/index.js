@@ -9,11 +9,11 @@ $(function(){
 		{
 			name:"购物商城",
 			texts:"单页式，初版为一元投资，后改为普通移动端购物商城，包括登陆、注册、商品详情，商品加载，各组件的数据渲染及处理，使用React+AmazeUI实现该项目整体需求",
-			hrefs:"javascript:;"
+			hrefs:"https://github.com/Alextututu/Alextututu.github.io/tree/master/good-lock/src"
 		},
 		{
 			name:"个人简历",
-			texts:"本简历，使用单页全屏滚屏布局，尽可能的响应PC至移动端全范围，mousewheel事件做到兼容firefox、chrome、IE；移动端利用touchstart来响应浏览者的触屏操作。技能点为jQuery和CSS3动画效果",
+			texts:"	本人的电子版简历，使用单页全屏滚动布局，尽可能响应PC至移动端全范围，mousewheel事件做到兼容firefox、chrome、IE；移动端采用touchstart事件响应浏览者的触屏操作，动画效果采用CSS3搭配jQuery实现",
 			hrefs:"https://alextututu.github.io/Resume/index.html"
 		}
 	]

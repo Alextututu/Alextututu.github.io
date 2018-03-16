@@ -812,6 +812,17 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 	.my_6_box a:nth-child(7){
 		font-size: 28px;
 	}
+	.heights{
+		animation: heights 2.6s 1;
+	}
+	@keyframes heights{
+		from{
+			height: 0;
+		}
+		to{
+			height: 50px;
+		}
+	}
 }
 	@media screen and (max-width: 400px){
 		.my_2_top_title{
@@ -835,7 +846,8 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 			line-height: 28px;
 		}
 		.my_6_box p{
-			font-size: 16px;
+			font-size: 14px;
+			margin: 10px 0;
 		}
 		
 		.my_6_box a{
@@ -847,5 +859,16 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 		}
 		.my_6_box a:nth-child(7){
 			font-size: 26px;
+		}
+		.heights{
+			animation: heights 2.6s 1;
+		}
+		@keyframes heights{
+			from{
+				height: 0;
+			}
+			to{
+				height: 50px;
+			}
 		}
 	}

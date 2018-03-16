@@ -37,13 +37,8 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 }
 
 .arrow-1 {
-  -webkit-animation: arrow-movement 2s ease-in-out infinite;
-          animation: arrow-movement 2s ease-in-out infinite;
-}
-
-.arrow-2 {
-  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
-          animation: arrow-movement 2s 1s ease-in-out infinite;
+  -webkit-animation: arrow-movement 1.2s ease-in-out infinite;
+          animation: arrow-movement 1.2s ease-in-out infinite;
 }
 
 .arrowss:before,

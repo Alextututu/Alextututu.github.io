@@ -1,5 +1,5 @@
 *{margin: 0px auto;padding:0px;font-family:"微软雅黑";-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-body{background: #FFFFFF;overflow-x: hidden;min-width: 420px;}
+body{background: #FFFFFF;overflow-x: hidden;min-width: 400px;}
 a{text-decoration: none;outline: none;color: black}
 a:focus{outline: none;}
 a:hover{color: black;}
@@ -10,4 +10,5 @@ input[type=button], input[type=submit], input[type=file], button { cursor: point
 /*mongod --dbpath=sadfsdafsad --port=27777
 node server.js
 */
+header{overflow: hidden;}
 #article{width:100%;}

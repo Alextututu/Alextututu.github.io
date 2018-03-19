@@ -41,10 +41,6 @@ class Article extends Component{
             //购买数量，默认1
             num:1
        }
-    //    console.log(shopdata[ev.target.getAttribute("ids")]);
-    // console.log(detaildedata);
-    // console.log(arr.idnum);
-    // console.log(detaildedata.find(e=>arr.idnum==e.idnum));
             if(JSON.stringify(detaildedata).indexOf(arr.idnum)!=-1){
                 detaildedata.find(e=>arr.idnum==e.idnum).num+=1;
             }else{
@@ -54,7 +50,6 @@ class Article extends Component{
     }
 
     render(){
-        
         let {arr}=this.data;
         return(
             <div className="article_box">

@@ -9,7 +9,6 @@ import Login from './js/login';
 
 
 
-
 document.getElementsByTagName("body")[0].style.width=window.innerWidth+"px";
 document.getElementsByTagName("body")[0].style.height=window.innerHeight+"px";
 
@@ -18,8 +17,8 @@ window.onresize=function(){
     document.getElementsByTagName("body")[0].style.height=window.innerHeight+"px"; 
 }
 ReactDOM.render(<Carousel />, document.getElementById('header'));
-ReactDOM.render(<Indexs />, document.getElementById('article'));
-
+ReactDOM.render(<Login />, document.getElementById('article'));
+document.getElementById('header').style.height=0;
 
 
 

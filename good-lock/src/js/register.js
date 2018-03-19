@@ -4,7 +4,9 @@ import '../css/register.css';
 class Register extends Component{
     render(){
         return(
-            <div></div>
+            <div id="">
+                
+            </div>
         )
     }
 }

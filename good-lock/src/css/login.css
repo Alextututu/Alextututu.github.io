@@ -10,18 +10,23 @@
     padding:8px 8px 8px 40px;
     font-size: 16px;
     line-height: 16px;
-    background: url("../img/geren.png") no-repeat;
     background-position-x: 6px;
     background-position-y: 6px;
     border-bottom: 2px solid #DEDEDE;
     margin: 10px;
     outline: none;
 }
+.Logins_username{
+    background: url("../img/geren.png") no-repeat;
+}
+.Logins_password{
+    background:url("../img/mima.png") no-repeat;
+}
 #Logins_box button{
     text-align: center;
     border:1px solid #CE3956;
     outline: none;
-    padding: 5px 0;
+    padding: 6px 0;
     border-radius: 6px;
     margin: 10px 0;
 } 

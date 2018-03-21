@@ -5,7 +5,7 @@ $(function(){
 			name:"音乐播放器",
 			texts:"闲假时的小页面，采用H5的audio标签，并利用其属性特点实现歌词同步，进度条同步，播放时间同步，音量控制，歌曲切换，随机播放等等基础功能，页面响应式设定范围为PC",
 			hrefs:"https://alextututu.github.io/Music/index.html"
-		},
+		},   
 		{
 			name:"购物商城",
 			texts:"单页式，初版为一元投资，后改为普通移动端购物商城，包括登陆、注册、商品详情，商品加载，各组件的数据渲染及处理，使用React+AmazeUI实现该项目整体需求",
